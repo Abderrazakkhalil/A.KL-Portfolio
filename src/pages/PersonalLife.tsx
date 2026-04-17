@@ -17,7 +17,7 @@ type ClubGroup = {
 }
 
 const loadClubImages = (): GalleryImage[] => {
-  const imageModules = import.meta.glob('/public/parasco/clubs/**/*.{png,jpg,jpeg,webp}', { eager: true })
+  const imageModules = import.meta.glob('/public/parasco/clubs/**/*.{png,jpg,jpeg,webp}')
 
   return Object.keys(imageModules)
     .sort((a, b) => a.localeCompare(b))
@@ -52,7 +52,7 @@ const groupedClubs: ClubGroup[] = clubOrder
   .filter((club) => club.images.length > 0)
 
 const loadFootballImages = (): GalleryImage[] => {
-  const imageModules = import.meta.glob('/public/parasco/foot/*.{png,jpg,jpeg,webp}', { eager: true })
+  const imageModules = import.meta.glob('/public/parasco/foot/*.{png,jpg,jpeg,webp}')
 
   return Object.keys(imageModules)
     .sort((a, b) => a.localeCompare(b))

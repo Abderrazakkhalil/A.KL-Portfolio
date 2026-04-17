@@ -316,7 +316,7 @@ const experienceItems: ExperienceItem[] = [
 ]
 
 const loadExperienceImages = (): ExperienceImage[] => {
-  const imageModules = import.meta.glob('/public/experience/**/*.{png,jpg,jpeg,webp}', { eager: true })
+  const imageModules = import.meta.glob('/public/experience/**/*.{png,jpg,jpeg,webp}')
 
   return Object.keys(imageModules)
     .sort((a, b) => a.localeCompare(b))

@@ -15,7 +15,7 @@ const loadAmbitionImages = (): GalleryItem[] => {
   const items: GalleryItem[] = []
   
   // Load Art images
-  const artModules = import.meta.glob('/public/about_me/Art/*.{png,jpg,jpeg,webp}', { eager: true })
+  const artModules = import.meta.glob('/public/about_me/Art/*.{png,jpg,jpeg,webp}')
   Object.keys(artModules)
     .sort((a, b) => a.localeCompare(b))
     .forEach((path, index) => {
@@ -29,7 +29,7 @@ const loadAmbitionImages = (): GalleryItem[] => {
     })
 
   // Load Book PDFs
-  const bookModules = import.meta.glob('/public/about_me/my_book/*.pdf', { eager: true })
+  const bookModules = import.meta.glob('/public/about_me/my_book/*.pdf')
   Object.keys(bookModules)
     .sort((a, b) => a.localeCompare(b))
     .forEach((path, index) => {
@@ -60,7 +60,7 @@ const GraphicDesign: React.FC = () => {
     setImages(items)
 
     // Extract book paths
-    const bookModules = import.meta.glob('/public/about_me/my_book/*.pdf', { eager: true })
+    const bookModules = import.meta.glob('/public/about_me/my_book/*.pdf')
     const paths: Record<number, string> = {}
     Object.keys(bookModules)
       .sort((a, b) => a.localeCompare(b))

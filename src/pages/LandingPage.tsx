@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-const experienceImages = import.meta.glob('/public/experience/**/*.{png,jpg,jpeg,webp}', { eager: true })
-const parascoImages = import.meta.glob('/public/parasco/**/*.{png,jpg,jpeg,webp}', { eager: true })
-const ambitionImages = import.meta.glob('/public/about_me/Art/*.{png,jpg,jpeg,webp}', { eager: true })
-const ambitionRootImages = import.meta.glob('/public/about_me/*.{png,jpg,jpeg,webp}', { eager: true })
+const experienceImages = import.meta.glob('/public/experience/**/*.{png,jpg,jpeg,webp}')
+const parascoImages = import.meta.glob('/public/parasco/**/*.{png,jpg,jpeg,webp}')
+const ambitionImages = import.meta.glob('/public/about_me/Art/*.{png,jpg,jpeg,webp}')
+const ambitionRootImages = import.meta.glob('/public/about_me/*.{png,jpg,jpeg,webp}')
 
 const firstImagePath = (modules: Record<string, unknown>): string | undefined => {
   return Object.keys(modules).sort((a, b) => a.localeCompare(b))[0]?.replace('/public', '')
