@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resume>
+  <personal_information>
+    <name>
+      <first_name>Amine</first_name>
+      <last_name>El-Hend</last_name>
+      <full_name>AMINE EL-HEND</full_name>
+    </name>
+    <contact>
+      <email>amine.elhend@gmail.com</email>
+      <phone>+212 6 14 20 93 41</phone>
+      <address>
+        <street>Al Oulfa, Firdaous, GH11</street>
+        <city>Casablanca</city>
+        <country>Morocco</country>
+      </address>
+      <linkedin>linkedin.com/in/amine-el-hend-1a4810228</linkedin>
+      <github>github.com/A.KL-Dost</github>
+    </contact>
+    <professional_title>Industrial Engineering Student specializing in Artificial Intelligence and Data Science</professional_title>
+    <objective>Seeking a final year internship starting February 2026.</objective>
+  </personal_information>
+
+  <education>
+    <degree>
+      <institution>Higher National School of Arts and Crafts (ENSAM)</institution>
+      <location>Meknes</location>
+      <program>Industrial Engineering</program>
+      <major>Artificial Intelligence &amp; Data Science</major>
+      <start_date>September 2021</start_date>
+      <end_date>Present</end_date>
+      <status>In Progress</status>
+    </degree>
+  </education>
+
+  <professional_experience>
+    <experience>
+      <company>GAMA IntÃ©gration (GAMA Distribution)</company>
+      <position>Engineering Intern</position>
+      <start_date>July 2024</start_date>
+      <end_date>July 2024</end_date>
+      <description>
+        <responsibility>Programmed an IFM camera for anomaly detection on a production line using TIA Portal.</responsibility>
+      </description>
+    </experience>
+    
+    <experience>
+      <company>Capgemini engineering</company>
+      <position>Year-End Project Internship</position>
+      <start_date>July 2025</start_date>
+      <end_date>August 2025</end_date>
+      <description>
+        <responsibility>Developed an application to digitize the verification process of CTFs in the RCM for Stellantis.</responsibility>
+      </description>
+    </experience>
+    
+    <experience>
+      <company>GRIF TECH</company>
+      <position>Internship (Marketing Department)</position>
+      <start_date>July 2023</start_date>
+      <end_date>August 2023</end_date>
+      <description>
+        <responsibility>Created and designed a technical catalog for products from the SH and SHTEL brands.</responsibility>
+      </description>
+    </experience>
+  </professional_experience>
+
+  <extracurricular_experience>
+    <activity>
+      <title>Head of Media &amp; IT Cell</title>
+      <organization>ADEAM</organization>
+      <type>Leadership</type>
+    </activity>
+    
+    <activity>
+      <title>Executive Board Member</title>
+      <organization>A&amp;M Inter-Institutes</organization>
+      <type>Leadership</type>
+    </activity>
+    
+    <activity>
+      <title>Executive Board Member</title>
+      <organization>A&amp;M Enterprise Forum</organization>
+      <type>Leadership</type>
+    </activity>
+    
+    <activity>
+      <title>Vice-President of the Integration Committee for the Class of 2029</title>
+      <organization>ENSAM</organization>
+      <type>Leadership</type>
+    </activity>
+    
+    <activity>
+      <title>Head of Aerospace Trades</title>
+      <organization>Space Club</organization>
+      <type>Technical Leadership</type>
+    </activity>
+    
+    <activity>
+      <title>Vice-President</title>
+      <organization>Gadz'IT (A&amp;M IT Club)</organization>
+      <type>Leadership</type>
+    </activity>
+    
+    <activity>
+      <title>Founder</title>
+      <organization>GENOS (AI Club of ENSAM Meknes)</organization>
+      <type>Founder &amp; Leadership</type>
+    </activity>
+    
+    <activity>
+      <title>Manager for 3 years</title>
+      <organization>A Day Of Science</organization>
+      <type>Management</type>
+      <duration>3 years</duration>
+    </activity>
+  </extracurricular_experience>
+
+  <projects>
+    <project>
+      <name>GenAI-DFX: Generative AI for Product Design</name>
+      <category>AI/ML</category>
+      <description>Created a Streamlit application that generates design suggestions for specific requests, including product categorization and suggested manufacturing materials while respecting DfX design standards.</description>
+      <technologies>
+        <technology>Python</technology>
+        <technology>Streamlit</technology>
+        <technology>Generative AI</technology>
+      </technologies>
+    </project>
+    
+    <project>
+      <name>Data Preprocessing Project</name>
+      <category>Data Science</category>
+      <description>Developed an interface that preprocesses provided data (.csv, .xls, .txt, ...) and provides all desired statistics in the form of diagrams, graphs, etc.</description>
+      <technologies>
+        <technology>Python</technology>
+        <technology>Pandas</technology>
+        <technology>Data Visualization</technology>
+      </technologies>
+    </project>
+    
+    <project>
+      <name>Sketch to Image</name>
+      <category>AI/ML</category>
+      <description>Created a model using a GAN architecture to convert facial sketches into realistic images for comparing police sketches with the state database.</description>
+      <technologies>
+        <technology>Python</technology>
+        <technology>GAN</technology>
+        <technology>Deep Learning</technology>
+        <technology>PyTorch/TensorFlow</technology>
+      </technologies>
+    </project>
+    
+    <project>
+      <name>Datamining Project</name>
+      <category>Data Science</category>
+      <description>Predictive maintenance for a NASA turbine.</description>
+      <technologies>
+        <technology>Python</technology>
+        <technology>Machine Learning</technology>
+        <technology>Predictive Analytics</technology>
+      </technologies>
+    </project>
+    
+    <project>
+      <name>Electric Cable Winding Machine Design</name>
+      <category>Industrial Design</category>
+      <description>Designed the cable winding part of an electric cable winding machine.</description>
+      <technologies>
+        <technology>CATIA V5</technology>
+        <technology>AutoCAD</technology>
+        <technology>Mechanical Design</technology>
+      </technologies>
+    </project>
+    
+    <project>
+      <name>Machining Unit Design</name>
+      <category>Industrial Design</category>
+      <description>Designed a machining unit, specifically the part responsible for the head's translation using a helical system.</description>
+      <technologies>
+        <technology>CATIA V5</technology>
+        <technology>Mechanical Engineering</technology>
+      </technologies>
+    </project>
+    
+    <project>
+      <name>Quality Control Application via Reports</name>
+      <category>Software Development</category>
+      <description>Created a local, offline application for quality control of CTFs in a PCP by comparing them with measurement control reports using Python (PyQt6).</description>
+      <technologies>
+        <technology>Python</technology>
+        <technology>PyQt6</technology>
+        <technology>Quality Control</technology>
+      </technologies>
+    </project>
+    
+    <project>
+      <name>Explainable AI for Visual Quality Control: Detection and Operator Decision Support</name>
+      <category>AI/ML</category>
+      <description>Design a prototype for radiographic/vision-based quality control for a family of parts and selected modalities.</description>
+      <technologies>
+        <technology>Python</technology>
+        <technology>Computer Vision</technology>
+        <technology>Explainable AI</technology>
+        <technology>Deep Learning</technology>
+      </technologies>
+    </project>
+  </projects>
+
+  <skills>
+    <languages>
+      <language>
+        <name>Arabic</name>
+        <proficiency>Native</proficiency>
+      </language>
+      <language>
+        <name>English</name>
+        <proficiency>Professional</proficiency>
+      </language>
+      <language>
+        <name>French</name>
+        <proficiency>Professional</proficiency>
+      </language>
+    </languages>
+    
+    <soft_skills>
+      <skill>Creativity</skill>
+      <skill>Management</skill>
+      <skill>Leadership</skill>
+      <skill>Time management</skill>
+      <skill>Team work</skill>
+      <skill>Autonomous</skill>
+      <skill>Quick Learning</skill>
+      <skill>Adaptability</skill>
+      <skill>Curiosity</skill>
+      <skill>Problem Solving</skill>
+    </soft_skills>
+    
+    <technical_skills>
+      <category name="Programming Languages">
+        <skill>Python</skill>
+        <skill>C++</skill>
+        <skill>JAVA</skill>
+        <skill>SQL</skill>
+      </category>
+      
+      <category name="AI/ML Frameworks">
+        <skill>PyTorch</skill>
+        <skill>TensorFlow</skill>
+        <skill>Pandas</skill>
+      </category>
+      
+      <category name="Industrial Automation">
+        <skill>PL7PRO</skill>
+        <skill>TIA Portal</skill>
+      </category>
+      
+      <category name="CAD/Design Software">
+        <skill>CATIA V5</skill>
+        <skill>AutoCAD</skill>
+        <skill>Fritzing</skill>
+      </category>
+      
+      <category name="Graphic Design">
+        <skill>Adobe Illustrator</skill>
+        <skill>Adobe Photoshop</skill>
+        <skill>DaVinci Resolve</skill>
+      </category>
+      
+      <category name="Business/Management">
+        <skill>Lean Six Sigma</skill>
+        <skill>ComptabilitÃ©</skill>
+        <skill>Protheus8</skill>
+      </category>
+      
+      <category name="Engineering Tools">
+        <skill>RDM6</skill>
+      </category>
+      
+      <category name="Productivity">
+        <skill>Notion</skill>
+        <skill>Asana</skill>
+        <skill>Microsoft Office</skill>
+      </category>
+    </technical_skills>
+  </skills>
+
+  <certifications>
+    <certification>
+      <title>Google Project Management: Specialization</title>
+      <issuer>Google</issuer>
+      <type>Specialization</type>
+    </certification>
+    
+    <certification>
+      <title>Project Initiation: Starting a Successful Project</title>
+      <issuer>Google</issuer>
+      <type>Course</type>
+    </certification>
+    
+    <certification>
+      <title>Machine Learning with Python</title>
+      <issuer>IBM</issuer>
+      <type>Course</type>
+    </certification>
+    
+    <certification>
+      <title>Generative AI for Executives &amp; Business Leaders</title>
+      <issuer>IBM</issuer>
+      <type>Course</type>
+    </certification>
+    
+    <certification>
+      <title>Supervised Machine Learning: Regression and Classification</title>
+      <issuer>Stanford</issuer>
+      <type>Course</type>
+    </certification>
+    
+    <certification>
+      <title>Lean Six Sigma Yellow Belt</title>
+      <issuer>ECLEE</issuer>
+      <type>Certification</type>
+    </certification>
+    
+    <certification>
+      <title>Oracle Cloud Infrastructure, AI Foundations</title>
+      <issuer>Oracle</issuer>
+      <type>Course</type>
+    </certification>
+  </certifications>
+</resume>
