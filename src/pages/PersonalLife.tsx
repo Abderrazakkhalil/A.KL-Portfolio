@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Masonry from 'react-masonry-css'
-import { Mail, Linkedin, Github, Layers, Eye } from 'lucide-react'
+import { Mail, Linkedin, Github, Layers } from 'lucide-react'
 
 type GalleryImage = {
   src: string
@@ -77,7 +77,6 @@ const FOOTBALL_COVER_IMAGE = '/parasco/foot/football-cover.png'
 const PersonalLife: React.FC = () => {
   const [activeSection, setActiveSection] = useState<'clubs' | 'football'>('clubs')
   const [activeClub, setActiveClub] = useState(groupedClubs[0]?.key ?? 'genos')
-  const [showGrid, setShowGrid] = useState(true)
 
   const currentClub = groupedClubs.find((club) => club.key === activeClub) ?? groupedClubs[0]
   const currentGallery = activeSection === 'clubs' ? currentClub : footballGroup
@@ -102,14 +101,9 @@ const PersonalLife: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2 text-xs text-[#8ba1b8]">
-            <button
-              onClick={() => setShowGrid(!showGrid)}
-              className="px-3 py-1.5 rounded border border-[#2f3b4a] transition-colors flex items-center gap-2"
-              style={{ backgroundColor: showGrid ? '#15243a' : 'transparent', color: showGrid ? '#ffffff' : '#8ba1b8' }}
-            >
-              <Eye size={12} />
-              <span className="hidden sm:inline">Grid</span>
-            </button>
+            <span className="px-3 py-1.5 rounded border border-[#2f3b4a] bg-[#15243a] text-white">
+              Grid actif
+            </span>
           </div>
         </div>
       </div>
@@ -169,15 +163,13 @@ const PersonalLife: React.FC = () => {
       </div>
 
       <div className="px-4 md:px-6 py-4 md:py-8 relative">
-        {showGrid && (
-          <div
-            className="absolute inset-0 pointer-events-none opacity-30"
-            style={{
-              backgroundImage: 'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)',
-              backgroundSize: '20px 20px',
-            }}
-          />
-        )}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-30"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)',
+            backgroundSize: '20px 20px',
+          }}
+        />
 
         {currentGallery && (
           <div className="relative z-10">

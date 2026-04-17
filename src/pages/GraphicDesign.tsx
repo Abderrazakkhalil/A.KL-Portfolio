@@ -215,8 +215,8 @@ const GraphicDesign: React.FC = () => {
                       whileTap={{ scale: 0.9 }}
                       className={`transition-all rounded-full border ${
                         index === currentSlide
-                          ? 'bg-[#58a6ff] border-[#58a6ff] w-3 h-3'
-                          : 'bg-transparent border-[#2f3b4a] hover:border-[#58a6ff] w-2.5 h-2.5'
+                            ? 'bg-[#58a6ff] border-[#58a6ff] w-2.5 h-2.5 md:w-3 md:h-3'
+                            : 'bg-transparent border-[#2f3b4a] hover:border-[#58a6ff] w-2 h-2 md:w-2.5 md:h-2.5'
                       }`}
                       title={`Aller a la diapositive ${index + 1}`}
                     />
@@ -246,7 +246,7 @@ const GraphicDesign: React.FC = () => {
                     <img
                       src={img.image}
                       alt="Miniature oeuvre artistique"
-                      className="w-16 h-16 md:w-20 md:h-20 object-contain bg-[#050914]"
+                      className="w-12 h-12 md:w-20 md:h-20 object-contain bg-[#050914]"
                     />
                   </motion.button>
                 ))}
