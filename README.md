@@ -117,7 +117,12 @@ This project is personal work and copyright © 2025 Khalil Abderrazak.
 
 - **GitHub:** [@Abderrazakkhalil](https://github.com/Abderrazakkhalil)
 - **Email:** Contact via the floating contact widget
-- **Portfolio:** [Live on GitHub Pages](#)
+- **Portfolio:** [Live on Vercel](https://a-kl-portfolio.vercel.app)
+
+## Deployment
+
+- **Production:** https://a-kl-portfolio.vercel.app
+- **Provider:** Vercel
 
 ---
 
