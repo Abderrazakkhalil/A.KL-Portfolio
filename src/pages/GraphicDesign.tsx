@@ -206,7 +206,7 @@ const GraphicDesign: React.FC = () => {
               {/* Slide Indicators and Info */}
               <div className="mt-6 flex items-center justify-between">
                 {/* Dots Indicator */}
-                <div className="flex items-center gap-2 flex-wrap">
+                <div className="hidden sm:flex items-center gap-2 flex-wrap">
                   {artImages.map((_, index) => (
                     <motion.button
                       key={index}
@@ -231,7 +231,7 @@ const GraphicDesign: React.FC = () => {
               </div>
 
               {/* Thumbnails Strip */}
-              <div className="mt-6 flex gap-3 pb-2 overflow-x-auto scroll-smooth">
+              <div className="mt-5 flex gap-2 pb-2 overflow-x-auto scroll-smooth">
                 {artImages.map((img, index) => (
                   <motion.button
                     key={img.id}
@@ -246,7 +246,7 @@ const GraphicDesign: React.FC = () => {
                     <img
                       src={img.image}
                       alt="Miniature oeuvre artistique"
-                      className="w-12 h-12 md:w-20 md:h-20 object-contain bg-[#050914]"
+                      className="w-10 h-10 md:w-20 md:h-20 object-contain bg-[#050914]"
                     />
                   </motion.button>
                 ))}
