@@ -16,10 +16,13 @@ type ClubGroup = {
   images: GalleryImage[]
 }
 
+const isClubLogo = (path: string) => /\/logo\.(jpe?g|png|webp)$/i.test(path)
+
 const loadClubImages = (): GalleryImage[] => {
   const imageModules = import.meta.glob('/public/parasco/clubs/**/*.{png,jpg,jpeg,webp}')
 
   return Object.keys(imageModules)
+    .filter((path) => !isClubLogo(path))
     .sort((a, b) => a.localeCompare(b))
     .map((path) => {
       const pathParts = path.split('/')
@@ -206,6 +209,16 @@ const PersonalLife: React.FC = () => {
               </div>
             )}
 
+            <div className="md:hidden mb-4 rounded-2xl border border-[#2f3b4a] bg-[#0f1622] px-4 py-3">
+              <div className="flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="text-xs uppercase tracking-[0.22em] text-[#8ba1b8]">Vue mobile</p>
+                  <p className="text-sm font-semibold text-white truncate">{currentGallery.name} est prêt avec {currentGallery.images.length} images</p>
+                </div>
+                <div className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#58a6ff]">Swipe</div>
+              </div>
+            </div>
+
             <div className="flex items-center justify-between gap-3 mb-4 md:mb-6">
               <div className="flex items-center gap-3 min-w-0">
                 <span className="w-12 h-12 md:w-14 md:h-14 rounded-2xl overflow-hidden border border-[#2f3b4a] bg-black/30 flex items-center justify-center shrink-0">
@@ -268,6 +281,8 @@ const PersonalLife: React.FC = () => {
                       src={image.src}
                       alt={currentGallery.name}
                       className="w-full h-auto object-cover block transition-transform duration-300 group-hover:scale-[1.02]"
+                      loading="lazy"
+                      decoding="async"
                     />
 
                     <div
