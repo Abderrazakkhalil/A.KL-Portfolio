@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Projets Académiques",
+    "items": [
+      {
+        "title": "Application Java (Spring Boot, JPA, PostgreSQL)",
+        "subtitle": "Système de gestion des cours et génération de quiz",
+        "imageLabel": "projet1",
+        "imagePath": "/personal/projects/academic/java-app/cover.png",
+        "videoLink": "/personal/projects/academic/java-app/demo.html"
+      },
+      {
+        "title": "Application web de gestion des évaluations académiques",
+        "subtitle": "Système de gestion des notes",
+        "imageLabel": "projet2",
+        "imagePath": "/personal/projects/academic/evaluations/cover.png",
+        "videoLink": "/personal/projects/academic/evaluations/demo.html",
+        "deckFile": "/personal/projects/academic/evaluations/README.txt"
+      }
+    ]
+  },
+  {
+    "title": "Projets IA & Innovation",
+    "items": [
+      {
+        "title": "Architecture modulaire de détection d’objets",
+        "subtitle": "FlexiNeck – Vision par ordinateur",
+        "imageLabel": "projet3",
+        "imagePath": "/personal/projects/placeholder/cover.png",
+        "deckFile": "/personal/projects/ai/object-detection/README.md"
+      },
+      {
+        "title": "Application de l’IA en mecanique",
+        "subtitle": "Transformation 2D vers 3D par RL",
+        "imageLabel": "projet4",
+        "imagePath": "/personal/projects/placeholder/cover.png"
+      }
+    ]
+  },
+  {
+    "title": "Projets Personnels",
+    "items": [
+      {
+        "title": "POS mobile-first avec QR et IA opérationnelle",
+        "subtitle": "ORDIO – SaaS de restauration intelligente",
+        "imageLabel": "projet5",
+        "imagePath": "/personal/projects/placeholder/cover.png",
+        "deckFile": "/personal/projects/personal/pos/ordio (3).pdf"
+      }
+    ]
+  },
+  {
+    "title": "Hackathons",
+    "items": [
+      {
+        "title": "Plateforme IA dédiée aux artisans des zones rurales",
+        "subtitle": "HackAI 4.0 – 2026 – Hirfati",
+        "imageLabel": "projet6",
+        "imagePath": "/personal/projects/hackathons/artisans/cover.png",
+        "videoLink": "/personal/projects/hackathons/artisans/Demo_Hirfati.mp4",
+        "gallery": [
+          "/personal/projects/hackathons/artisans/1.jpeg",
+          "/personal/projects/hackathons/artisans/WhatsApp Image 2026-05-19 at 14.08.47.jpeg"
+        ]
+      },
+      {
+        "title": "Amélioration du secteur informel et de la vie étudiante",
+        "subtitle": "HackActus 2025 – TAGHRA",
+        "imageLabel": "projet7",
+        "imagePath": "/personal/projects/hackathons/informal-sector/WhatsApp Image 2026-04-13 at 18.12.52.jpeg",
+        "gallery": [
+          "/personal/projects/hackathons/informal-sector/WhatsApp Image 2026-04-13 at 18.12.52.jpeg"
+        ]
+      },
+      {
+        "title": "Détection de la douleur par intelligence artificielle",
+        "subtitle": "InnovAI Hackathon 2023 – PainSense",
+        "imageLabel": "projet8",
+        "imagePath": "/personal/projects/placeholder/cover.png",
+        "videoLink": "/personal/projects/hackathons/painsense/Enregistrement de l'écran 2024-12-01 225159.mp4"
+      }
+    ]
+  }
+]

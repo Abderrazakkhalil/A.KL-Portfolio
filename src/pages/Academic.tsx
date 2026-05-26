@@ -177,82 +177,7 @@ type ProjectCategory = {
   items: ProjectEntry[]
 }
 
-const projectCategories: ProjectCategory[] = [
-  {
-    title: 'Projets Academiques',
-    items: [
-      {
-        title: 'Application Java (Spring Boot, JPA, PostgreSQL)',
-        subtitle: 'Systeme de gestion des cours et generation de quiz',
-        imageLabel: 'projet1',
-        imagePath: '/projects/hackathon/WhatsApp Image 2026-04-13 at 18.12.52.jpeg',
-      },
-      {
-        title: 'Application web de gestion des evaluations academiques',
-        subtitle: 'Systeme de gestion des notes',
-        imageLabel: 'projet2',
-        imagePath: '/projects/hackathon/Capture d\'écran 2026-04-14 091251.png',
-        deckFile: '/projects/Gestion_de_note_pour_%C3%A9tudiants%5B1%5D%20%5BLecture%20seule%5D.pptx',
-      },
-    ],
-  },
-  {
-    title: 'Projets Personnels',
-    items: [
-      {
-        title: 'Analyse intelligente des ventes et aide a la decision',
-        subtitle: 'Systeme POS (Point of Sale)',
-        imageLabel: 'projet3',
-        imagePath: '/projects/hackathon/WhatsApp Image 2026-04-13 at 18.12.52.jpeg',
-      },
-    ],
-  },
-  {
-    title: 'Projets IA & Innovation',
-    items: [
-      {
-        title: 'Gestion multimodale des reclamations',
-        subtitle: 'Application IA pour traitement texte, audio et image',
-        imageLabel: 'projet4',
-        imagePath: '/projects/hackathon/Capture d\'écran 2026-04-14 091251.png',
-      },
-      {
-        title: "Application de l'IA en mecanique",
-        subtitle: 'Transformation 2D vers 3D par RL',
-        imageLabel: 'projet5',
-        imagePath: '/projects/hackathon/WhatsApp Image 2026-04-13 at 18.12.52.jpeg',
-        videoLink: 'https://youtu.be/FH8urve8zBA',
-      },
-    ],
-  },
-  {
-    title: 'Hackathons',
-    items: [
-      {
-        title: 'Amelioration du secteur informel et de la vie etudiante',
-        subtitle: 'HackActus 2025 - TAGHRA',
-        imageLabel: 'projet6',
-        imagePath: '/projects/hackathon/Capture d\'écran 2026-04-14 091251.png',
-      },
-      {
-        title: "Reduire l'empreinte carbone et optimiser l'energie",
-        subtitle: 'Techathon 2025 - EcoStock Grid-Aware Optimizer',
-        imageLabel: 'projet7',
-        imagePath: '/projects/hackathon/WhatsApp Image 2026-04-13 at 18.12.52.jpeg',
-      },
-      {
-        title: 'Detection de la douleur par intelligence artificielle',
-        subtitle: 'InnovAI Hackathon 2023 - PainSense',
-        imageLabel: 'projet8',
-        imagePath: '/projects/hackathon/Capture d\'écran 2026-04-14 091251.png',
-      },
-    ],
-  },
-]
 
-const projectGalleryImages: string[] = Array.from(
-  new Set(projectCategories.flatMap((category) => category.items.map((item) => item.imagePath)))
-).slice(0, 2)
 
 type ExperienceItem = {
   key: string
@@ -334,6 +259,23 @@ const loadExperienceImages = (): ExperienceImage[] => {
 const experienceImages = loadExperienceImages()
 
 const Academic: React.FC = () => {
+  const [projectCategories, setProjectCategories] = useState<ProjectCategory[]>([])
+
+  useEffect(() => {
+    fetch('/projects.json')
+      .then((res) => res.json())
+      .then((data: ProjectCategory[]) => setProjectCategories(data))
+      .catch(() => {})
+  }, [])
+
+  const projectGalleryImages: string[] = Array.from(
+    new Set(
+      projectCategories.flatMap((category) =>
+        category.items.flatMap((item) => (Array.isArray((item as any).gallery) && (item as any).gallery.length ? (item as any).gallery : [item.imagePath]))
+      )
+    )
+  ).slice(0, 6)
+
   const [activeTab, setActiveTab] = useState<'about' | 'projects' | 'skills' | 'experience' | 'resume'>('about')
   const [terminalText, setTerminalText] = useState('')
   const [activeExperience, setActiveExperience] = useState<ExperienceItem>(experienceItems[0])
@@ -475,11 +417,11 @@ const Academic: React.FC = () => {
                                 {project.deckFile ? (
                                   <a
                                     href={project.deckFile}
-                                    download="Gestion_de_note_pour_etudiants.pptx"
+                                    download={project.deckFile.split('/').pop()}
                                     className="inline-flex items-center gap-1 text-[11px] px-2.5 py-1.5 rounded border border-[#2f81f7]/50 text-[#58a6ff] hover:bg-[#58a6ff] hover:text-[#0d1117] transition-colors"
                                   >
                                     <Download size={11} />
-                                    Download PowerPoint
+                                    Télécharger
                                   </a>
                                 ) : null}
                                 {project.videoLink ? (
@@ -712,10 +654,10 @@ const Academic: React.FC = () => {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="rounded-md border border-[#30363d] bg-[#161b22] p-6 text-center">
             <Code size={28} className="mx-auto text-[#58a6ff] mb-3" />
             <h3 className="text-white font-semibold">Download CV</h3>
-            <p className="text-[#8b949e] text-sm mt-2">khalil_ABDERRAZAK_CV.pdf</p>
+            <p className="text-[#8b949e] text-sm mt-2">cv_fr.pdf</p>
             <a
-              href="/doc/khalil_ABDERRAZAK_CV.pdf"
-              download="khalil_ABDERRAZAK_CV.pdf"
+              href="/doc/cv_fr.pdf"
+              download="cv_fr.pdf"
               type="application/pdf"
               className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded border border-[#30363d] text-[#58a6ff] hover:bg-[#58a6ff] hover:text-[#0d1117] transition-colors"
             >

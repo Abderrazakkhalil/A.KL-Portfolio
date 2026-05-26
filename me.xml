@@ -117,94 +117,212 @@
   </extracurricular_experience>
 
   <projects>
-    <project>
-      <name>GenAI-DFX: Generative AI for Product Design</name>
-      <category>AI/ML</category>
-      <description>Created a Streamlit application that generates design suggestions for specific requests, including product categorization and suggested manufacturing materials while respecting DfX design standards.</description>
-      <technologies>
-        <technology>Python</technology>
-        <technology>Streamlit</technology>
-        <technology>Generative AI</technology>
-      </technologies>
-    </project>
-    
-    <project>
-      <name>Data Preprocessing Project</name>
-      <category>Data Science</category>
-      <description>Developed an interface that preprocesses provided data (.csv, .xls, .txt, ...) and provides all desired statistics in the form of diagrams, graphs, etc.</description>
-      <technologies>
-        <technology>Python</technology>
-        <technology>Pandas</technology>
-        <technology>Data Visualization</technology>
-      </technologies>
-    </project>
-    
-    <project>
-      <name>Sketch to Image</name>
-      <category>AI/ML</category>
-      <description>Created a model using a GAN architecture to convert facial sketches into realistic images for comparing police sketches with the state database.</description>
-      <technologies>
-        <technology>Python</technology>
-        <technology>GAN</technology>
-        <technology>Deep Learning</technology>
-        <technology>PyTorch/TensorFlow</technology>
-      </technologies>
-    </project>
-    
-    <project>
-      <name>Datamining Project</name>
-      <category>Data Science</category>
-      <description>Predictive maintenance for a NASA turbine.</description>
-      <technologies>
-        <technology>Python</technology>
-        <technology>Machine Learning</technology>
-        <technology>Predictive Analytics</technology>
-      </technologies>
-    </project>
-    
-    <project>
-      <name>Electric Cable Winding Machine Design</name>
-      <category>Industrial Design</category>
-      <description>Designed the cable winding part of an electric cable winding machine.</description>
-      <technologies>
-        <technology>CATIA V5</technology>
-        <technology>AutoCAD</technology>
-        <technology>Mechanical Design</technology>
-      </technologies>
-    </project>
-    
-    <project>
-      <name>Machining Unit Design</name>
-      <category>Industrial Design</category>
-      <description>Designed a machining unit, specifically the part responsible for the head's translation using a helical system.</description>
-      <technologies>
-        <technology>CATIA V5</technology>
-        <technology>Mechanical Engineering</technology>
-      </technologies>
-    </project>
-    
-    <project>
-      <name>Quality Control Application via Reports</name>
-      <category>Software Development</category>
-      <description>Created a local, offline application for quality control of CTFs in a PCP by comparing them with measurement control reports using Python (PyQt6).</description>
-      <technologies>
-        <technology>Python</technology>
-        <technology>PyQt6</technology>
-        <technology>Quality Control</technology>
-      </technologies>
-    </project>
-    
-    <project>
-      <name>Explainable AI for Visual Quality Control: Detection and Operator Decision Support</name>
-      <category>AI/ML</category>
-      <description>Design a prototype for radiographic/vision-based quality control for a family of parts and selected modalities.</description>
-      <technologies>
-        <technology>Python</technology>
-        <technology>Computer Vision</technology>
-        <technology>Explainable AI</technology>
-        <technology>Deep Learning</technology>
-      </technologies>
-    </project>
+    <category name="Projets Académiques">
+      <project>
+        <name>Application Java (Spring Boot, JPA, PostgreSQL)</name>
+        <description>Application back-end Java avec persistance PostgreSQL et APIs REST.</description>
+        <technologies>
+          <technology>Java</technology>
+          <technology>Spring Boot</technology>
+          <technology>JPA</technology>
+          <technology>PostgreSQL</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/academic/java-app/cover.png</photo>
+          <demo>public/personal/projects/academic/java-app/demo.mp4</demo>
+          <attachments>public/personal/projects/academic/java-app/README.pdf</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>Système de gestion des cours et génération de quiz</name>
+        <description>Plateforme pour gérer cours, étudiants et générer des quiz automatiquement.</description>
+        <technologies>
+          <technology>Node.js</technology>
+          <technology>Express</technology>
+          <technology>SQLite/Postgres</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/academic/course-system/cover.png</photo>
+          <demo>public/personal/projects/academic/course-system/demo.html</demo>
+          <attachments>public/personal/projects/academic/course-system/specs.pdf</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>Application web de gestion des évaluations académiques</name>
+        <description>Application web pour planifier, saisir et suivre les évaluations.</description>
+        <technologies>
+          <technology>React</technology>
+          <technology>TypeScript</technology>
+          <technology>REST APIs</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/academic/evaluations/cover.png</photo>
+          <demo>public/personal/projects/academic/evaluations/demo.mp4</demo>
+          <attachments>public/personal/projects/academic/evaluations/screenshots.zip</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>Système de gestion des notes</name>
+        <description>Outil de saisie et consolidation automatique des notes et bulletins.</description>
+        <technologies>
+          <technology>Python</technology>
+          <technology>Django</technology>
+          <technology>PostgreSQL</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/academic/grades/cover.png</photo>
+          <demo>public/personal/projects/academic/grades/demo.mp4</demo>
+          <attachments>public/personal/projects/academic/grades/data-sample.csv</attachments>
+        </assets>
+      </project>
+    </category>
+
+    <category name="Projets IA &amp; Innovation">
+      <project>
+        <name>Architecture modulaire de détection d’objets</name>
+        <description>Pipeline modulaire pour détection d'objets réutilisable sur plusieurs datasets.</description>
+        <technologies>
+          <technology>Python</technology>
+          <technology>PyTorch</technology>
+          <technology>YOLO/Detectron</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/ai/object-detection/cover.png</photo>
+          <demo>public/personal/projects/ai/object-detection/demo.mp4</demo>
+          <attachments>public/personal/projects/ai/object-detection/model.zip</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>FlexiNeck – Vision par ordinateur</name>
+        <description>Projet CV pour la surveillance/diagnostic d'un système mécanique (FlexiNeck).</description>
+        <technologies>
+          <technology>Computer Vision</technology>
+          <technology>OpenCV</technology>
+          <technology>Deep Learning</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/ai/flexineck/cover.png</photo>
+          <demo>public/personal/projects/ai/flexineck/demo.mp4</demo>
+          <attachments>public/personal/projects/ai/flexineck/report.pdf</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>Application de l’IA en mécanique</name>
+        <description>Cas d'utilisation d'IA pour maintenance/prédiction en mécanique.</description>
+        <technologies>
+          <technology>Python</technology>
+          <technology>Scikit-learn</technology>
+          <technology>Time Series</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/ai/mechanics-ai/cover.png</photo>
+          <demo>public/personal/projects/ai/mechanics-ai/demo.mp4</demo>
+          <attachments>public/personal/projects/ai/mechanics-ai/dataset.zip</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>Transformation 2D vers 3D par RL</name>
+        <description>Prototype utilisant reinforcement learning pour reconstruire des scènes 3D à partir d'images 2D.</description>
+        <technologies>
+          <technology>Python</technology>
+          <technology>Reinforcement Learning</technology>
+          <technology>3D Rendering</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/ai/2d-to-3d/cover.png</photo>
+          <demo>public/personal/projects/ai/2d-to-3d/demo.mp4</demo>
+          <attachments>public/personal/projects/ai/2d-to-3d/notes.pdf</attachments>
+        </assets>
+      </project>
+    </category>
+
+    <category name="Projets Personnels">
+      <project>
+        <name>POS mobile-first avec QR et IA opérationnelle</name>
+        <description>Système POS mobile-first avec lecture QR et recommandations IA.</description>
+        <technologies>
+          <technology>React Native</technology>
+          <technology>TensorFlow Lite</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/personal/pos/cover.png</photo>
+          <demo>public/personal/projects/personal/pos/demo.mp4</demo>
+          <attachments>public/personal/projects/personal/pos/app.apk</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>ORDIO – SaaS de restauration intelligente</name>
+        <description>Plateforme SaaS pour la gestion intelligente des commandes et inventaire restauration.</description>
+        <technologies>
+          <technology>Ruby on Rails</technology>
+          <technology>Postgres</technology>
+        </technologies>
+        <assets>
+          <photo>public/personal/projects/personal/ordio/cover.png</photo>
+          <demo>public/personal/projects/personal/ordio/demo.mp4</demo>
+          <attachments>public/personal/projects/personal/ordio/pitch.pdf</attachments>
+        </assets>
+      </project>
+    </category>
+
+    <category name="Hackathons">
+      <project>
+        <name>Plateforme IA dédiée aux artisans des zones rurales</name>
+        <description>Soutien IA pour artisans: visibilité, optimisation prix et logistique.</description>
+        <assets>
+          <photo>public/personal/projects/hackathons/artisans/cover.png</photo>
+          <demo>public/personal/projects/hackathons/artisans/demo.mp4</demo>
+          <attachments>public/personal/projects/hackathons/artisans/presentation.pdf</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>HackAI 4.0 – 2026 – Hirfati</name>
+        <description>Projet présenté au HackAI 4.0 (Hirfati) en 2026.</description>
+        <assets>
+          <photo>public/personal/projects/hackathons/hackai-2026/cover.png</photo>
+          <demo>public/personal/projects/hackathons/hackai-2026/demo.mp4</demo>
+          <attachments>public/personal/projects/hackathons/hackai-2026/summary.pdf</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>HackActus 2025 – TAGHRA</name>
+        <description>Projet présenté au HackActus 2025 (TAGHRA).</description>
+        <assets>
+          <photo>public/personal/projects/hackathons/hackactus-2025/cover.png</photo>
+          <demo>public/personal/projects/hackathons/hackactus-2025/demo.mp4</demo>
+          <attachments>public/personal/projects/hackathons/hackactus-2025/report.pdf</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>Amélioration du secteur informel et de la vie étudiante</name>
+        <description>Initiative axée sur l'amélioration des conditions pour le secteur informel et la vie étudiante.</description>
+        <assets>
+          <photo>public/personal/projects/hackathons/informal-sector/cover.png</photo>
+          <demo>public/personal/projects/hackathons/informal-sector/demo.mp4</demo>
+          <attachments>public/personal/projects/hackathons/informal-sector/materials.zip</attachments>
+        </assets>
+      </project>
+
+      <project>
+        <name>Détection de la douleur par intelligence artificielle</name>
+        <description>Projet InnovAI 2023 – PainSense: détection automatique de douleur via signaux visuels et physiologiques.</description>
+        <assets>
+          <photo>public/personal/projects/hackathons/painsense/cover.png</photo>
+          <demo>public/personal/projects/hackathons/painsense/demo.mp4</demo>
+          <attachments>public/personal/projects/hackathons/painsense/paper.pdf</attachments>
+        </assets>
+      </project>
+    </category>
   </projects>
 
   <skills>
