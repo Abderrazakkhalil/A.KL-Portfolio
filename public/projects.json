@@ -1,83 +1,122 @@
 [
   {
-    "title": "Projets Académiques",
+    "title": "Recherche & Architectures IA",
     "items": [
       {
-        "title": "Application Java (Spring Boot, JPA, PostgreSQL)",
-        "subtitle": "Système de gestion des cours et génération de quiz",
-        "imageLabel": "projet1",
+        "title": "TAWRA",
+        "subtitle": "Architecture RL multi-agents pour la sculpture 3D à partir de silhouettes 2D.",
+        "imageLabel": "RL_3D",
+        "imagePath": "/project_attached/ra_ia/tawra/screenshot_3.png",
+        "gallery": [
+          "/project_attached/ra_ia/tawra/screenshot_3.png",
+          "/project_attached/ra_ia/tawra/screenshot_4.png"
+        ],
+        "githubUrl": "https://github.com/Abderrazakkhalil/TAWRA.git"
+      },
+      {
+        "title": "FlexiNeck",
+        "subtitle": "Architecture de vision neuronale adaptative conçue from scratch.",
+        "imageLabel": "CV_DeepLearning",
+        "imagePath": "/project_attached/ra_ia/flexineck/screenshot_1.png",
+        "deckFile": "/project_attached/ra_ia/flexineck/FLEXINECK_README.md",
+        "gallery": [
+          "/project_attached/ra_ia/flexineck/screenshot_1.png",
+          "/project_attached/ra_ia/flexineck/screenshot_2.png"
+        ],
+        "readmeDesc": "FlexiNeck is a modular and configurable neck architecture for computer vision tasks, acting as a feature aggregation layer between the backbone and heads. It combines FPN, PAN, SPP, and Attention mechanisms to aggregate multi-scale features and enhance representations for detection, segmentation, and classification."
+      },
+      {
+        "title": "Agentic-Security-Evaluator",
+        "subtitle": "Audit de prompt injections et création de la défense DefendAgent.",
+        "imageLabel": "Sécurité_IA",
+        "imagePath": "/personal/projects/placeholder/cover.png",
+        "deckFile": "/project_attached/ra_ia/agentic-sec/Agentic_Security_Evaluator_Paper.pdf"
+      },
+      {
+        "title": "RL-Ocean",
+        "subtitle": "Implémentation pédagogique d'architectures Deep RL pour consolider la théorie.",
+        "imageLabel": "Deep_RL",
+        "imagePath": "/personal/projects/placeholder/cover.png",
+        "githubUrl": "https://github.com/Abderrazakkhalil/RL-Ocean.git"
+      }
+    ]
+  },
+  {
+    "title": "IA Engineering & Applications",
+    "items": [
+      {
+        "title": "SmartClaim AI",
+        "subtitle": "Plateforme de gestion de réclamations industrielles.",
+        "imageLabel": "IA_Industrielle",
+        "imagePath": "/personal/projects/placeholder/cover.png",
+        "githubUrl": "https://github.com/HxRJILI/SmartClaim-AI.git"
+      },
+      {
+        "title": "Smart LOTO",
+        "subtitle": "Formation sécurité AR/MR avec détection d'objets.",
+        "imageLabel": "AR_Sécurité",
+        "imagePath": "/personal/projects/placeholder/cover.png",
+        "githubUrl": "https://github.com/MerlinMaven/LOTO_PROJECT.git"
+      }
+    ]
+  },
+  {
+    "title": "Software & Projets personnels",
+    "items": [
+      {
+        "title": "EduQuiz",
+        "subtitle": "Application full-stack de gestion de cours/quiz avec Spring Boot.",
+        "imageLabel": "FullStack",
         "imagePath": "/personal/projects/academic/java-app/cover.png",
-        "videoLink": "/personal/projects/academic/java-app/demo.html"
+        "videoLink": "/project_attached/software/java-app/demo.html"
       },
       {
-        "title": "Application web de gestion des évaluations académiques",
-        "subtitle": "Système de gestion des notes",
-        "imageLabel": "projet2",
-        "imagePath": "/personal/projects/academic/evaluations/cover.png",
-        "videoLink": "/personal/projects/academic/evaluations/demo.html",
-        "deckFile": "/personal/projects/academic/evaluations/README.txt"
-      }
-    ]
-  },
-  {
-    "title": "Projets IA & Innovation",
-    "items": [
-      {
-        "title": "Architecture modulaire de détection d’objets",
-        "subtitle": "FlexiNeck – Vision par ordinateur",
-        "imageLabel": "projet3",
+        "title": "ORDIO",
+        "subtitle": "POS SaaS restauration mobile-first, QR & IA.",
+        "imageLabel": "SaaS",
         "imagePath": "/personal/projects/placeholder/cover.png",
-        "deckFile": "/personal/projects/ai/object-detection/README.md"
+        "deckFile": "/project_attached/software/ordio_business_plan.pdf"
       },
       {
-        "title": "Application de l’IA en mecanique",
-        "subtitle": "Transformation 2D vers 3D par RL",
-        "imageLabel": "projet4",
-        "imagePath": "/personal/projects/placeholder/cover.png"
-      }
-    ]
-  },
-  {
-    "title": "Projets Personnels",
-    "items": [
-      {
-        "title": "POS mobile-first avec QR et IA opérationnelle",
-        "subtitle": "ORDIO – SaaS de restauration intelligente",
-        "imageLabel": "projet5",
+        "title": "Sling Puck Arena",
+        "subtitle": "Jeu d'arcade 2D avec moteur physique sur mesure et IA.",
+        "imageLabel": "GameDev",
         "imagePath": "/personal/projects/placeholder/cover.png",
-        "deckFile": "/personal/projects/personal/pos/ordio (3).pdf"
+        "deckFile": "/project_attached/software/SlingPuckArena.exe"
       }
     ]
   },
   {
-    "title": "Hackathons",
+    "title": "Hackathons & Compétitions",
     "items": [
       {
-        "title": "Plateforme IA dédiée aux artisans des zones rurales",
-        "subtitle": "HackAI 4.0 – 2026 – Hirfati",
-        "imageLabel": "projet6",
-        "imagePath": "/personal/projects/hackathons/artisans/cover.png",
-        "videoLink": "/personal/projects/hackathons/artisans/Demo_Hirfati.mp4",
+        "title": "Générateur IA e-commerce rural",
+        "subtitle": "HackAI 4.0 – 2026 – Plateforme IA dédiée aux artisans des zones rurales (Top 5/29)",
+        "imageLabel": "HackAI_4",
+        "imagePath": "/project_attached/hack/hack_ia_1.jpeg",
         "gallery": [
-          "/personal/projects/hackathons/artisans/1.jpeg",
-          "/personal/projects/hackathons/artisans/WhatsApp Image 2026-05-19 at 14.08.47.jpeg"
+          "/project_attached/hack/hack_ia.jpeg",
+          "/project_attached/hack/hack_ia_.jpeg",
+          "/project_attached/hack/hack_ia_1.jpeg"
         ]
       },
       {
-        "title": "Amélioration du secteur informel et de la vie étudiante",
-        "subtitle": "HackActus 2025 – TAGHRA",
-        "imageLabel": "projet7",
-        "imagePath": "/personal/projects/hackathons/informal-sector/WhatsApp Image 2026-04-13 at 18.12.52.jpeg",
+        "title": "TAGHRA",
+        "subtitle": "HackActus 2025 – Structuration du secteur informel étudiant",
+        "imageLabel": "HackActus",
+        "imagePath": "/project_attached/hack/informel_sector.jpeg",
         "gallery": [
-          "/personal/projects/hackathons/informal-sector/WhatsApp Image 2026-04-13 at 18.12.52.jpeg"
+          "/project_attached/hack/informel_sector.jpeg"
         ]
       },
       {
-        "title": "Détection de la douleur par intelligence artificielle",
-        "subtitle": "InnovAI Hackathon 2023 – PainSense",
-        "imageLabel": "projet8",
-        "imagePath": "/personal/projects/placeholder/cover.png",
-        "videoLink": "/personal/projects/hackathons/painsense/Enregistrement de l'écran 2024-12-01 225159.mp4"
+        "title": "PainSense",
+        "subtitle": "InnovAI 2023 – Détection et évaluation IA de la douleur",
+        "imageLabel": "InnovAI",
+        "imagePath": "/project_attached/hack/2023.png",
+        "gallery": [
+          "/project_attached/hack/2023.png"
+        ]
       }
     ]
   }

@@ -16,6 +16,19 @@ export default {
     },
     extend: {
       colors: {
+        // Red / Burgundy accent system
+        'crimson': {
+          'vivid': '#F00000',
+          'strong': '#E60000',
+          'primary': '#CC0000',
+          'deep': '#B30000',
+          'dark': '#990000',
+          'burgundy': '#800000',
+          'deep-burgundy': '#660000',
+          'very-dark': '#4D0000',
+          'near-black': '#330000',
+          'deepest': '#190000',
+        },
         // Vintage color palette - Light and airy
         'vintage': {
           'cream': '#FBF8F3',

@@ -55,7 +55,7 @@ const CustomCursor: React.FC = () => {
         transition={{ type: 'spring', stiffness: 500, damping: 28 }}
         className="fixed top-0 left-0 w-8 h-8 pointer-events-none z-[9999] hidden md:block"
       >
-        <div className="w-full h-full rounded-full border-2 border-[#58a6ff] bg-[#58a6ff]/15 shadow-[0_0_12px_rgba(88,166,255,0.4)]" />
+        <div className="w-full h-full rounded-full border-2 border-[#B3262E] bg-[#B3262E]/15 shadow-[0_0_12px_rgba(179,38,46,0.4)]" />
       </motion.div>
 
       {/* Cursor trail */}
@@ -67,7 +67,7 @@ const CustomCursor: React.FC = () => {
         transition={{ type: 'spring', stiffness: 150, damping: 15 }}
         className="fixed top-0 left-0 w-2 h-2 pointer-events-none z-[9999] hidden md:block"
       >
-        <div className="w-full h-full rounded-full bg-[#58a6ff] shadow-[0_0_8px_rgba(88,166,255,0.6)]" />
+        <div className="w-full h-full rounded-full bg-[#B3262E] shadow-[0_0_8px_rgba(179,38,46,0.6)]" />
       </motion.div>
     </>
   )

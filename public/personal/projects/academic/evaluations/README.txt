@@ -1,1 +1,0 @@
-Placeholder attachments for evaluations. Replace with cover.png / demo.mp4 / attachments as needed.

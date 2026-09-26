@@ -1,0 +1,1 @@
+Placeholder attachments for java-app. Replace with cover.png / demo.mp4 / README.pdf as needed.
