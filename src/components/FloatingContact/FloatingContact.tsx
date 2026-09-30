@@ -6,7 +6,7 @@ const FloatingContact: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const socialLinks = [
-    { icon: Mail, href: 'mailto:khalilabderrazak1@gmail.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:abderrazakkhalil7@gmail.com', label: 'Email' },
     { icon: Github, href: 'https://github.com/Abderrazakkhalil', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/khalil-abderrazak1', label: 'LinkedIn' },
   ]

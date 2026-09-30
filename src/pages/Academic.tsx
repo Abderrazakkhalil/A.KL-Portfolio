@@ -18,117 +18,74 @@ type SkillSection = {
 
 const skillSections: SkillSection[] = [
   {
-    key: 'ia-ml',
-    label: 'IA & ML',
-    title: 'Intelligence Artificielle & ML',
-    summary: 'Conception de modèles intelligents et expérimentation sur des cas réels.',
+    key: 'ia-paradigms',
+    label: 'IA',
+    title: 'Architectures & Paradigmes IA',
+    summary: 'Conception de modèles intelligents et architectures avancées.',
     icon: <Brain size={18} />,
     items: [
       {
-        name: 'Machine Learning',
-        stack: ['Supervised Learning', 'Unsupervised Learning', 'Regression', 'Classification', 'Clustering'],
+        name: 'Fondamentaux & Mécanismes',
+        stack: ['Apprentissage Statistique', 'Topologies Neuronales', "Mécanismes d'Attention (Transformers, ViT)"],
       },
       {
-        name: 'Deep Learning & Computer Vision',
-        stack: ['Neural Networks', 'CNNs', 'Object Detection', 'Image Segmentation', 'Sequence Models'],
-        relatedProject: 'FlexiNeck',
+        name: 'Modèles Avancés',
+        stack: ['RL Multi-Agents (MARL)', 'Espaces Latents (VAE, Diffusion)', 'Architectures Agentiques'],
       },
       {
-        name: 'Reinforcement Learning',
-        stack: ['Q-Learning', 'Deep Q-Networks', 'Policy-Based Methods', 'Multi-Agent RL'],
-        relatedProject: 'TAWRA',
-      },
-      {
-        name: 'Sécurité IA',
-        stack: ['Prompt Injections', 'Évaluation de modèles', 'Sécurisation LLM'],
-        relatedProject: 'Agentic-Security-Evaluator',
+        name: 'Optimisation & Apprentissage',
+        stack: ['PEFT (LoRA)', 'Apprentissage Fédéré'],
       },
     ],
   },
   {
-    key: 'data',
-    label: 'Data',
-    title: 'Data Science',
-    summary: 'Pipeline data complet, de l’exploration à la visualisation.',
-    icon: <Database size={18} />,
-    items: [
-      {
-        name: 'Exploration & Prétraitement',
-        stack: ['EDA', 'Cleaning', 'Normalisation', 'Feature Engineering'],
-      },
-      {
-        name: 'Visualisation Analytique',
-        stack: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
-      },
-      {
-        name: 'Bases de Données',
-        stack: ['MySQL', 'PostgreSQL', 'Modélisation MCD/MLD'],
-      },
-    ],
-  },
-  {
-    key: 'web',
-    label: 'Web',
-    title: 'Développement Web & Logiciel',
-    summary: 'Création d’interfaces et de services applicatifs robustes.',
-    icon: <LayoutTemplate size={18} />,
-    items: [
-      {
-        name: 'Front-end',
-        stack: ['HTML5/CSS3', 'JavaScript', 'TypeScript', 'React'],
-        relatedProject: 'ORDIO',
-      },
-      {
-        name: 'Back-end',
-        stack: ['Spring Boot', 'Node.js', 'API Design', 'Architecture SaaS'],
-        relatedProject: 'EduQuiz',
-      },
-      {
-        name: 'Prototypage & AR',
-        stack: ['Streamlit', 'Réalité Augmentée', 'Détection d\'objets en temps réel'],
-        relatedProject: 'Smart LOTO',
-      },
-    ],
-  },
-  {
-    key: 'langages',
-    label: 'Langages',
-    title: 'Langages de Programmation',
-    summary: 'Polyvalence technique pour prototypage et production.',
+    key: 'dev-frameworks',
+    label: 'Dev & Frameworks',
+    title: 'Développement & Frameworks',
+    summary: 'Polyvalence technique en développement logiciel et applicatif.',
     icon: <Code size={18} />,
     items: [
       {
-        name: 'Scripting & IA',
-        stack: ['Python', 'Julia', 'R'],
+        name: 'Langages de Programmation',
+        stack: ['Python', 'C++', 'Java', 'PHP'],
       },
       {
-        name: 'Web & Applicatif',
-        stack: ['JavaScript', 'TypeScript', 'PHP'],
-      },
-      {
-        name: 'Système & Algorithmique',
-        stack: ['Java', 'C++'],
+        name: 'Frameworks Web & Applicatifs',
+        stack: ['Spring Boot', 'React', 'PyQt'],
       },
     ],
   },
   {
-    key: 'tools',
-    label: 'Outils',
-    title: 'Outils & Environnements',
-    summary: 'Workflow de production technique et expérimentation.',
+    key: 'data-devops',
+    label: 'Data & DevOps',
+    title: 'Architecture Data & DevOps',
+    summary: 'Modélisation, gestion des données et workflow de production.',
+    icon: <Database size={18} />,
+    items: [
+      {
+        name: 'Bases de Données & Modélisation',
+        stack: ['SQL', 'PostgreSQL', 'Modélisation de données (UML/MERISE)'],
+      },
+      {
+        name: 'Versioning & Infrastructure',
+        stack: ['Git', 'Docker'],
+      },
+    ],
+  },
+  {
+    key: 'mixed-industry',
+    label: 'AR & Industrie',
+    title: 'Réalité Mixte & Industrie',
+    summary: 'Prototypage 3D, réalité augmentée et méthodes industrielles.',
     icon: <Wrench size={18} />,
     items: [
       {
-        name: 'Versioning & DevOps',
-        stack: ['Git', 'GitHub', 'Docker'],
+        name: 'Moteurs 3D & AR',
+        stack: ['Unity', 'Vuforia', 'ARCore'],
       },
       {
-        name: 'Environnements Data/IA',
-        stack: ['Jupyter', 'Google Colab'],
-      },
-      {
-        name: 'IDE',
-        stack: ['VS Code', 'IntelliJ IDEA'],
+        name: 'Méthodologie & Ingénierie',
+        stack: ['Méthodes Agiles (Scrum)', 'Lean Six Sigma', 'Éco-conception'],
       },
     ],
   },
@@ -279,7 +236,7 @@ const Academic: React.FC = () => {
   const [expandedProject, setExpandedProject] = useState<string | null>(null)
   const [terminalText, setTerminalText] = useState('')
   const [activeExperience, setActiveExperience] = useState<ExperienceItem>(experienceItems[0])
-  const [activeSkillKey, setActiveSkillKey] = useState<string>(skillSections[0]?.key ?? 'ia-ml')
+  const [activeSkillKey, setActiveSkillKey] = useState<string>(skillSections[0]?.key ?? 'ia-paradigms')
   const [activeProjectCategoryIndex, setActiveProjectCategoryIndex] = useState<number>(0)
 
   const activeSkillSection = skillSections.find((section) => section.key === activeSkillKey) ?? skillSections[0]
@@ -777,10 +734,10 @@ const Academic: React.FC = () => {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="rounded-md border border-[#222222] bg-[#111111] p-6 text-center">
             <Code size={28} className="mx-auto text-[#CC0000] mb-3" />
             <h3 className="text-white font-semibold">Download CV</h3>
-            <p className="text-[#CCCCCC] text-sm mt-2">AKL_CV.pdf</p>
+            <p className="text-[#CCCCCC] text-sm mt-2">A_KL_CV.pdf</p>
             <a
-              href="/doc/AKL_CV.pdf"
-              download="AKL_CV.pdf"
+              href="/doc/A_KL_CV.pdf"
+              download="A_KL_CV.pdf"
               type="application/pdf"
               className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded border border-[#222222] text-[#CC0000] hover:bg-[#CC0000] hover:text-[#050505] transition-colors"
             >

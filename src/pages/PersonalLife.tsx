@@ -297,7 +297,7 @@ const PersonalLife: React.FC = () => {
         <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="rounded-2xl border border-[#E5E5E5] bg-white p-6 shadow-sm">
           <h3 className="text-[#0A0A0A] text-xl font-semibold mb-3">Contact</h3>
           <div className="flex flex-wrap gap-4 text-sm">
-            <a href="mailto:khalilabderrazak1@gmail.com" className="text-[#CC0000] hover:text-[#E60000] inline-flex items-center gap-2"><Mail size={14} /> khalilabderrazak1@gmail.com</a>
+            <a href="mailto:abderrazakkhalil7@gmail.com" className="text-[#CC0000] hover:text-[#E60000] inline-flex items-center gap-2"><Mail size={14} /> abderrazakkhalil7@gmail.com</a>
             <a href="https://www.linkedin.com/in/khalil-abderrazak1" target="_blank" rel="noreferrer" className="text-[#CC0000] hover:text-[#E60000] inline-flex items-center gap-2"><Linkedin size={14} /> LinkedIn</a>
             <a href="https://github.com/Abderrazakkhalil" target="_blank" rel="noreferrer" className="text-[#CC0000] hover:text-[#E60000] inline-flex items-center gap-2"><Github size={14} /> GitHub</a>
           </div>

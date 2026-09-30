@@ -16,7 +16,6 @@ const Navigation: React.FC = () => {
   }, [])
 
   const navItems = [
-    { path: '/', label: 'Home', icon: Home },
     { path: '/experience', label: 'Expérience', icon: GraduationCap },
     { path: '/parascolaire', label: 'Activités parascolaires', icon: Trophy },
     { path: '/ambitions', label: 'Mes Ambitions', icon: Sparkles },
