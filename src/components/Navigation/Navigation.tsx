@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Home, GraduationCap, Trophy, Sparkles } from 'lucide-react'
+import { Menu, X, GraduationCap, Trophy, Sparkles } from 'lucide-react'
 import { useNavigationStore } from '../../store/store'
 
 const Navigation: React.FC = () => {

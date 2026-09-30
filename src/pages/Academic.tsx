@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Masonry from 'react-masonry-css'
-import { Brain, Code, Database, Download, Calendar, FolderKanban, Youtube, LayoutTemplate, Wrench, MapPin } from 'lucide-react'
+import { Brain, Code, Database, Download, Calendar, FolderKanban, Youtube, Wrench, MapPin } from 'lucide-react'
 
 type SkillSection = {
   key: string
